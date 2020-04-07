@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Markdown</title>
+    <url>/2020/04/07/%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown(#)"></a>Markdown(#)</h1><h2 id="所有字符都是英文小写"><a href="#所有字符都是英文小写" class="headerlink" title="所有字符都是英文小写(##)"></a>所有字符都是英文小写(##)</h2><h3 id="一些基本操作"><a href="#一些基本操作" class="headerlink" title="一些基本操作(###)"></a>一些基本操作(###)</h3><a id="more"></a>
+
+<ul>
+<li><p>列表1 (- )</p>
+</li>
+<li><p>列表2(- )</p>
+<p>a 子列表</p>
+<p>b 子列表2</p>
+<ul>
+<li>子列表 3(- )</li>
+</ul>
+</li>
+<li><p>列表3(- )</p>
+</li>
+</ul>
+<hr>
+<p><a href="www.baidu.com">百度导航</a>    （【xxx】（地址））</p>
+<hr>
+<p>图片 （  ！【xxx】（地址））</p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586244892518&di=9c8a5bae84812da44e6311ac94beccb9&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F21%2F09%2F01200000026352136359091694357.jpg" alt="xxx"></p>
+<hr>
+<p><em>字体是斜的</em> （**）</p>
+<p><strong>字体加粗</strong>（****）</p>
+<hr>
+<p><code>&lt;html&gt;&lt;/html&gt;</code>(``)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">	&lt;head&gt;</span><br><span class="line">	    &lt;title&gt;我是标题&lt;&#x2F;title&gt;</span><br><span class="line">	&lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		(&#96;&#96;&#96;&#96;&#96;&#96;)</span><br><span class="line">	&lt;&#x2F;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>分割线（➖ *3）</p>
+<blockquote>
+<p>我才没有引用呢    引用(&gt;)</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>-首发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/04/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>dd</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello Blog</title>
+    <url>/2020/04/04/Hello-Blog/</url>
+    <content><![CDATA[<p>##1</p>
+<p>hahaha</p>
+<p>##2</p>
+<p>hehehe</p>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>hello</category>
+      </categories>
+      <tags>
+        <tag>FIRST</tag>
+        <tag>SECOND</tag>
+      </tags>
+  </entry>
+</search>
