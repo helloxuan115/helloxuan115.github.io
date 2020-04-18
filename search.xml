@@ -17,6 +17,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2020/04/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>dd</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Markdown</title>
     <url>/2020/04/07/%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown(#)"></a>Markdown(#)</h1><h2 id="所有字符都是英文小写"><a href="#所有字符都是英文小写" class="headerlink" title="所有字符都是英文小写(##)"></a>所有字符都是英文小写(##)</h2><h3 id="一些基本操作"><a href="#一些基本操作" class="headerlink" title="一些基本操作(###)"></a>一些基本操作(###)</h3><a id="more"></a>
@@ -62,27 +83,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/04/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>dd</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Eclipse 在tomcat中配置java project</title>
     <url>/2020/04/18/xxx/</url>
     <content><![CDATA[<h1 id="Eclipse-在tomcat中配置java-project"><a href="#Eclipse-在tomcat中配置java-project" class="headerlink" title="Eclipse 在tomcat中配置java project"></a>Eclipse 在tomcat中配置java project</h1><p>为什么不用Eclipse EE版本,或者MyEclipse的自带的tomcat 启动？<br>因为大家工作以后，最常见的工作环境是： 在Windows下开发，然后把开发好的web项目部署到Linux的服务器上。 是不可能在Linux启动一个eclipse/myeclipse，然后里面跑一个tomcat来运行的！<br>所以尽可能采用接近生产环境的方式部署web应用，也是为了让以后能够工作的更加平滑。</p>
@@ -104,22 +104,5 @@
       <tags>
         <tag>-Eclipse</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>在tomcat中配置java project</title>
-    <url>/2020/04/18/%E5%9C%A8tomcat%E4%B8%AD%E9%85%8D%E7%BD%AEjava%20project/</url>
-    <content><![CDATA[<h1 id="Eclipse-在tomcat中配置java-project"><a href="#Eclipse-在tomcat中配置java-project" class="headerlink" title="Eclipse 在tomcat中配置java project"></a>Eclipse 在tomcat中配置java project</h1><p>为什么不用Eclipse EE版本,或者MyEclipse的自带的tomcat 启动？<br>因为大家工作以后，最常见的工作环境是： 在Windows下开发，然后把开发好的web项目部署到Linux的服务器上。 是不可能在Linux启动一个eclipse/myeclipse，然后里面跑一个tomcat来运行的！<br>所以尽可能采用接近生产环境的方式部署web应用，也是为了让以后能够工作的更加平滑。</p>
-<hr>
-<p>打开tomcat/conf/server.xml，在&lt;Host下增加一个&lt;context</p>
-<p>&lt;Host name=”localhost”  appBase=”webapps”</p>
-<p>​            unpackWARs=”true” autoDeploy=”true”&gt;</p>
-<p>​    <Context path="/tmall" docBase="(项目地址)E:\\project\\tmall\\web" debug="0" reloadable="false" /></p>
-<p>一个普通的java项目下我们需要手动创建文件夹web/WEB-INF.   web.xml文件就放在web/WEB-INF这个文件夹下.</p>
-<p>web/WEB-INF/lib下配置所需的jar包 如:jstl.jar servlet-api.jar等。</p>
-<p>一般这时候就可以运行startup.bat跑项目了.</p>
-<hr>
-<p>有时候因为tomcat无法找到对应的class文件,导致出现404的错误,以下是解决办法:</p>
-<p>我们在Eclipse中右键项目然后Bulid Path–&gt;Configure Bulid Path,在Source下面设置Defalut output folder为: 项目名称/web/WEB-INF/classes (如果没有则创建这个文件夹) .之后我们在Eclipse主界面Project这个菜单项下Clean我们的项目,最后重启tomcat,这样我们的项目就可以正常运行了.</p>
-]]></content>
   </entry>
 </search>
