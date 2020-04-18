@@ -86,6 +86,8 @@
     <title>Eclipse 在tomcat中配置java project</title>
     <url>/2020/04/18/xxx/</url>
     <content><![CDATA[<h1 id="Eclipse-在tomcat中配置java-project"><a href="#Eclipse-在tomcat中配置java-project" class="headerlink" title="Eclipse 在tomcat中配置java project"></a>Eclipse 在tomcat中配置java project</h1><p>为什么不用Eclipse EE版本,或者MyEclipse的自带的tomcat 启动？<br>因为大家工作以后，最常见的工作环境是： 在Windows下开发，然后把开发好的web项目部署到Linux的服务器上。 是不可能在Linux启动一个eclipse/myeclipse，然后里面跑一个tomcat来运行的！<br>所以尽可能采用接近生产环境的方式部署web应用，也是为了让以后能够工作的更加平滑。</p>
+<a id="more"></a>
+
 <hr>
 <p>打开tomcat/conf/server.xml，在&lt;Host下增加一个&lt;context</p>
 <p>&lt;Host name=”localhost”  appBase=”webapps”</p>
