@@ -82,4 +82,44 @@
         <category>dd</category>
       </categories>
   </entry>
+  <entry>
+    <title>Eclipse 在tomcat中配置java project</title>
+    <url>/2020/04/18/xxx/</url>
+    <content><![CDATA[<h1 id="Eclipse-在tomcat中配置java-project"><a href="#Eclipse-在tomcat中配置java-project" class="headerlink" title="Eclipse 在tomcat中配置java project"></a>Eclipse 在tomcat中配置java project</h1><p>为什么不用Eclipse EE版本,或者MyEclipse的自带的tomcat 启动？<br>因为大家工作以后，最常见的工作环境是： 在Windows下开发，然后把开发好的web项目部署到Linux的服务器上。 是不可能在Linux启动一个eclipse/myeclipse，然后里面跑一个tomcat来运行的！<br>所以尽可能采用接近生产环境的方式部署web应用，也是为了让以后能够工作的更加平滑。</p>
+<hr>
+<p>打开tomcat/conf/server.xml，在&lt;Host下增加一个&lt;context</p>
+<p>&lt;Host name=”localhost”  appBase=”webapps”</p>
+<p>​            unpackWARs=”true” autoDeploy=”true”&gt;</p>
+<p>​    <Context path="/tmall" docBase="(项目地址)E:\\project\\tmall\\web" debug="0" reloadable="false" /></p>
+<p>一个普通的java项目下我们需要手动创建文件夹web/WEB-INF.   web.xml文件就放在web/WEB-INF这个文件夹下.</p>
+<p>web/WEB-INF/lib下配置所需的jar包 如:jstl.jar servlet-api.jar等。</p>
+<p>一般这时候就可以运行startup.bat跑项目了.</p>
+<hr>
+<p>有时候因为tomcat无法找到对应的class文件,导致出现404的错误,以下是解决办法:</p>
+<p>我们在Eclipse中右键项目然后Bulid Path–&gt;Configure Bulid Path,在Source下面设置Defalut output folder为: 项目名称/web/WEB-INF/classes (如果没有则创建这个文件夹) .之后我们在Eclipse主界面Project这个菜单项下Clean我们的项目,最后重启tomcat,这样我们的项目就可以正常运行了.</p>
+]]></content>
+      <categories>
+        <category>Eclipse</category>
+      </categories>
+      <tags>
+        <tag>-Eclipse</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在tomcat中配置java project</title>
+    <url>/2020/04/18/%E5%9C%A8tomcat%E4%B8%AD%E9%85%8D%E7%BD%AEjava%20project/</url>
+    <content><![CDATA[<h1 id="Eclipse-在tomcat中配置java-project"><a href="#Eclipse-在tomcat中配置java-project" class="headerlink" title="Eclipse 在tomcat中配置java project"></a>Eclipse 在tomcat中配置java project</h1><p>为什么不用Eclipse EE版本,或者MyEclipse的自带的tomcat 启动？<br>因为大家工作以后，最常见的工作环境是： 在Windows下开发，然后把开发好的web项目部署到Linux的服务器上。 是不可能在Linux启动一个eclipse/myeclipse，然后里面跑一个tomcat来运行的！<br>所以尽可能采用接近生产环境的方式部署web应用，也是为了让以后能够工作的更加平滑。</p>
+<hr>
+<p>打开tomcat/conf/server.xml，在&lt;Host下增加一个&lt;context</p>
+<p>&lt;Host name=”localhost”  appBase=”webapps”</p>
+<p>​            unpackWARs=”true” autoDeploy=”true”&gt;</p>
+<p>​    <Context path="/tmall" docBase="(项目地址)E:\\project\\tmall\\web" debug="0" reloadable="false" /></p>
+<p>一个普通的java项目下我们需要手动创建文件夹web/WEB-INF.   web.xml文件就放在web/WEB-INF这个文件夹下.</p>
+<p>web/WEB-INF/lib下配置所需的jar包 如:jstl.jar servlet-api.jar等。</p>
+<p>一般这时候就可以运行startup.bat跑项目了.</p>
+<hr>
+<p>有时候因为tomcat无法找到对应的class文件,导致出现404的错误,以下是解决办法:</p>
+<p>我们在Eclipse中右键项目然后Bulid Path–&gt;Configure Bulid Path,在Source下面设置Defalut output folder为: 项目名称/web/WEB-INF/classes (如果没有则创建这个文件夹) .之后我们在Eclipse主界面Project这个菜单项下Clean我们的项目,最后重启tomcat,这样我们的项目就可以正常运行了.</p>
+]]></content>
+  </entry>
 </search>
