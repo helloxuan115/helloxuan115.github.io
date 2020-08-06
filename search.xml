@@ -152,4 +152,49 @@
         <tag>linux 阿里云</tag>
       </tags>
   </entry>
+  <entry>
+    <title>AboutNginx</title>
+    <url>/2020/08/06/AboutNginx/</url>
+    <content><![CDATA[<p>#nginx学习心得</p>
+<p>1.在nginx.conf中设置可以实现反向代理,静态分离</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">       	proxy_pass http:<span class="comment">//127.0.0.1:8111;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>location /</strong> 表示处理所有请求<br><strong>proxy_pass <a href="http://127.0.0.1:8111" target="_blank" rel="noopener">http://127.0.0.1:8111</a>;</strong> 表示把请求都交给<a href="http://127.0.0.1:8111来处理">http://127.0.0.1:8111来处理</a></p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">location ~\.(css|js|png)$ &#123;</span><br><span class="line">           root C:&#x2F;Users&#x2F;X7TI&#x2F;Downloads&#x2F;tomcat_8111&#x2F;webapps&#x2F;ROOT;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>这表示所有的css js png访问都由nginx来做，访问的地址是</p>
+<p>C:/Users/X7TI/Downloads/tomcat_8111/webapps/ROOT</p>
+<p><strong>注意</strong>:填写本地地址的时候，要用正斜杠 / 不要用反斜杠 ;</p>
+<p>使用自己本机地址时注意地址中文件名不要出现如<strong>Hello World</strong>这样的有空格的文件名，否则可能会报这样的错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">invalid number of arguments in &quot;root&quot; directive in C:\Users\Hello World\Downloads\nginx&#x2F;conf&#x2F;nginx.c</span><br></pre></td></tr></table></figure>
+
+
+
+<p>root后面如果有不同地址,使用”<strong>,</strong>“隔开即可.</p>
+<p>反向代理意义:</p>
+<p>因为nginx在处理静态文件的吞吐量上面比tomcat好很多，通常他们俩配合，不会把所有的请求都如本例所示的交给tomcat, 而是把静态请求交给nginx，动态请求，如jsp, servlet,ssm， struts等请求交给tomcat. 从而达到动静分离的效果。 </p>
+<p>2.负载均衡</p>
+<p>增加一个upstream ，用来指向两个tomcat</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">upstream tomcat_8111_8222&#123;</span><br><span class="line">server	127.0.0.1:8111 weight&#x3D;1;</span><br><span class="line">server	127.0.0.1:8222 weight&#x3D;2;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后修改location，反向代理到上述配置。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">	location &#x2F; &#123;</span><br><span class="line">       	proxy_pass http:&#x2F;&#x2F;tomcat_8111_8222;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.session共享</p>
+<p>使用redis+tomcat-sessoin-manager</p>
+<p>打开redis</p>
+<p>两个tomcat中都修改tomcat/conf/context.xml</p>
+<p>增加下面代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Valve className&#x3D;&quot;com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve&quot; &#x2F;&gt;  </span><br><span class="line">  &lt;Manager className&#x3D;&quot;com.orangefunction.tomcat.redissessions.RedisSessionManager&quot;  </span><br><span class="line">   host&#x3D;&quot;127.0.0.1&quot;  </span><br><span class="line">   port&#x3D;&quot;6379&quot;  </span><br><span class="line">   database&#x3D;&quot;0&quot;  </span><br><span class="line">   maxInactiveInterval&#x3D;&quot;60&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>两个tomcat session就共享了</p>
+]]></content>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
 </search>
